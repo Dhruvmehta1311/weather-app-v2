@@ -20,9 +20,49 @@ $(document).ready(function () {
         );
         $("#temprature").text(`Temprature: ${data.main.temp}C`);
         $("#humidity").text(`Humidity: ${data.main.humidity}%`);
+        Toastify({
+          text: "Weather Info Fetched Successfully!",
+          duration: 3000,
+          destination: "https://github.com/apvarun/toastify-js",
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast();
+      }).fail(function () {
+        Toastify({
+          text: "City Not Found! Try Entering a Valid One Maybe?",
+          duration: 3000,
+          destination: "https://github.com/apvarun/toastify-js",
+          newWindow: true,
+          close: true,
+          gravity: "top", // `top` or `bottom`
+          position: "right", // `left`, `center` or `right`
+          stopOnFocus: true, // Prevents dismissing of toast on hover
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast();
       });
     } else {
       $("#custom-alert").removeClass("hidden");
+      Toastify({
+        text: "Enter a Valid Input First!",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+      }).showToast();
     }
   });
 });
