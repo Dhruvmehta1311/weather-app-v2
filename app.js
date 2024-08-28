@@ -47,6 +47,7 @@ $(document).ready(function () {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
           },
         }).showToast();
+        $("#loader").addClass("hidden");
       });
     } else {
       $("#custom-alert").removeClass("hidden");
