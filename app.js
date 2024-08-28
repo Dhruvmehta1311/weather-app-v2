@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $("#submit-form").on("submit", function (e) {
     e.preventDefault();
-    const inputVal = $("#input").val();
+    const inputVal = $("#input").val().trim();
     if (inputVal != "") {
       $("#loader").removeClass("hidden");
       $("#weather-info").addClass("hidden");
