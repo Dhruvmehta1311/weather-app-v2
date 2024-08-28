@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen">
+      <form
+        id="submit-form"
+        class="bg-blue-300 rounded w-[400px] p-6 flex flex-col items-center justify-center gap-4"
+      >
+        <input
+          id="input"
+          type="text"
+          class="w-full rounded h-[40px] outline-none p-4"
+          placeholder="Enter City/State/Country"
+        />
+        <button id="search" class="text-white bg-green-600 w-[150px] py-2 px-8">
+          Search
+        </button>
+        <div id="loader" class="flex items-center justify-center hidden">
+          <div class="relative">
+            <div
+              class="h-24 w-24 rounded-full border-t-8 border-b-8 border-gray-200"
+            ></div>
+            <div
+              class="absolute top-0 left-0 h-24 w-24 rounded-full border-t-8 border-b-8 border-blue-500 animate-spin"
+            ></div>
+          </div>
+        </div>
+        <div id="weather-info" class="text-white hidden w-full">
+          <h2 id="city-name"></h2>
+          <p id="weather-description"></p>
+          <p id="temprature"></p>
+          <p id="humidity"></p>
+        </div>
+        <p id="custom-alert" class="hidden">Enter a City Name First!</p>
+      </form>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
