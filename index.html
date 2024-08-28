@@ -14,15 +14,15 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="flex items-center justify-center h-screen">
+    <div class="flex items-center justify-center h-screen bg-blue-300">
       <form
         id="submit-form"
-        class="bg-blue-300 rounded w-[400px] p-6 flex flex-col items-center justify-center gap-4"
+        class="bg-white min-h-[200px] rounded max-w-[400px] w-[90%] mx-auto p-6 flex flex-col items-center justify-center gap-4"
       >
         <input
           id="input"
           type="text"
-          class="w-full rounded h-[40px] outline-none p-4"
+          class="w-full rounded h-[40px] outline-none p-4 bg-blue-300 placeholder:text-white text-white"
           placeholder="Enter City/State/Country"
         />
         <button
@@ -41,7 +41,7 @@
             ></div>
           </div>
         </div>
-        <div id="weather-info" class="text-white hidden w-full">
+        <div id="weather-info" class="font-semibold hidden w-full">
           <h2 id="city-name"></h2>
           <p id="weather-description"></p>
           <p id="temprature"></p>
