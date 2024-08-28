@@ -23,7 +23,7 @@ $(document).ready(function () {
         Toastify({
           text: "Weather Info Fetched Successfully!",
           duration: 3000,
-          destination: "https://github.com/apvarun/toastify-js",
+          destination: "https://github.com/Dhruvmehta1311",
           newWindow: true,
           close: true,
           gravity: "top", // `top` or `bottom`
@@ -37,7 +37,7 @@ $(document).ready(function () {
         Toastify({
           text: "City Not Found! Try Entering a Valid One Maybe?",
           duration: 3000,
-          destination: "https://github.com/apvarun/toastify-js",
+          destination: "https://github.com/Dhruvmehta1311",
           newWindow: true,
           close: true,
           gravity: "top", // `top` or `bottom`
@@ -54,7 +54,7 @@ $(document).ready(function () {
       Toastify({
         text: "Enter a Valid Input First!",
         duration: 3000,
-        destination: "https://github.com/apvarun/toastify-js",
+        destination: "https://github.com/Dhruvmehta1311",
         newWindow: true,
         close: true,
         gravity: "top", // `top` or `bottom`
